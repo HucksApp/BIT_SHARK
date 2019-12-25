@@ -6,23 +6,22 @@ def get_wallet_details(driver , address_link, i,count,priv_k_l):
     driver.get(address_link)
     balance_all = driver.find_elements_by_css_selector('div.sc-8sty72-0.cyLejs span.bFGdFC.sc-16b9dsl-1.iIOvXh')
     final_balance_all=balance_all[10].text
-    addRs =balance_all[1].text
-    fbList=float(final_balance_all.split(' ')[0])
+    addRs = balance_all[1].text
+    fbList = float(final_balance_all.split(' ')[0])
     link_obj ={'fbList':fbList, 'wal_count':count}
     print(f'this is final balance list {fbList}')
     print(f'this is final balance count {count}')
     print(f'this is private address list {link_obj}')
     
+    if fbList >= 0.001:
+        for x in priv_k_l:
+            if x['private_key_count'] ==link_obj['wal_count']:
+                priv_access_key = x['private_key']
+        print(f'this wallet {final_balance_all} was found in  page {i} and the address is {addRs}..the private key {priv_access_key}')
+        with open('/Users/Ahrabprince/PycharmProjects/bit_shark_v1/result/result.txt','a') as result:
+           result.write(f'this wallet balance: {final_balance_all}. was found in  page {i} and the wallet address is {addRs}..the private key {priv_access_key}'+ "\n")
 
-    #if fbList>=0.001:
-    for x in priv_k_l:
-        if x['private_key_count'] ==link_obj['wal_count']:
-            priv_access_key = x['private_key']
-    print(f'this wallet {final_balance_all} was found in  page {i} and the address is {addRs}..the private key {priv_access_key}')
-    with open('/Users/Ahrabprince/PycharmProjects/bit_shark_v1/result/result.txt','a') as result:
-       result.write(f'this wallet balance: {final_balance_all}. was found in  page {i} and the wallet address is {addRs}..the private key {priv_access_key}'+ "\n")
-
-    print(f'EMPTY WALLET')
+        print(f'EMPTY WALLET')
     #driver.back()
 
 

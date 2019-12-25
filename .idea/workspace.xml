@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="74eec75a-7625-433f-bd1a-58fc4a1a6c08" name="Default Changelist" comment="k">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/appdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/appdriver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/shark_eng.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/result.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -42,7 +42,7 @@
  [],
  False,
  False,
- 1577302423,
+ 1577304096,
  [('run',
    '/Users/Ahrabprince/PycharmProjects/bit_shark_v1/venv/lib/python3.7/site-packages/PyInstaller/bootloader/Darwin-64bit/run',
    'EXECUTABLE')])
