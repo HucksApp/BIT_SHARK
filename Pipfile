@@ -7,6 +7,7 @@ verify_ssl = true
 
 [packages]
 selenium = "*"
+importlib-resources = "*"
 
 [requires]
 python_version = "3.7"
